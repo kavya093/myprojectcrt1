@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="forms_style.css">
+</head>
+<body>
+       <form>
+              <fieldset>
+                     <h1>User Personal Information</h1>
+                     <br>
+                     <label for="Name">Enter your full name:</label>
+                     <input type="text" id="Name" placeholder="Enter your Name"/>
+                     <br><br>
+                     <label for="email">Enter your email:</label>
+                     <input type="email" id="email" placeholder="Enter your Email" />
+                     <br><br>
+                     <label for="password">Enter your password:</label>
+                     <input type="password" id="password" placeholder="Enter the password" required />
+                     <br><br>
+                     <label for="confirmPassword">Confirm your password:</label>
+                     <input type="password" id="confirmPassword" placeholder="Re-enter your password" />
+                     <br><br>
+                     <label for="phone">Enter your phone number:</label>
+                     <input type="tel" id="phone" pattern="[0-10]{10}" placeholder="Enter your phone number"/>
+                     <br><br>
+                     <label>Enter your gender</label>
+                     <div class="gender-group">
+                            <input type="radio" name="gender" value="male" id="male" required/>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female" required/>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" value="others" id="others" required/>
+                            <label for="others">Others</label>
+                     </div>
+                     <label for="dob">Enter your Date of Birth</label>
+                     <input type="date" id="dob" required>
+                     <br><br>
+                     <label for="address">Enter your Address:</label>
+                     <textarea id="address" name="address" placeholder="ADDRESS" required></textarea>
+                     <br>
+                     <label for="country">Select your country:</label>
+                     <select id="country" required>
+                     <option value=""disabled selected>Select your country</option>
+                     <option value="INDIA">INDIA</option>
+                     <option value="AFGHANISTAN">AFGHANISTAN</option>
+                     <option value="NEPAL">NEPAL</option>
+                     <option value="CHINA">CHINA</option>
+                     <option value="JAPAN">JAPAN</option>
+                     </select>
+                     <center><button >Submit</button></center>
+              </fieldset>
+       </form>
+</body>
+</html>

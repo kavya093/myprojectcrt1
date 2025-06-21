@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+
+<h1 id="title">GeeksforGeeks Survey Form</h1>
+<p id="description">Thank you for visiting our page</p>
+<form id=survey-form>
+  <label id="name-label" for="name">Name</label><br>
+  <input id="name" type="text" placeholder="Enter your name" required><br><br>
+  <label id="email-label" for="email">Email</label><br>
+  <input id="email" type="email" placeholder="Enter your Email" required><br><br>
+  <label id="number-label" for="number">Age</label><br>
+  <input id="number" type="number" min="18" max="25" placeholder="Enter your Age"><br><br>
+  <label for="education">What are you persuing currently</label><br>
+ <select id="dropdown" required>
+  <option value="B.tech">B.tech</option>
+  <option value="Masters">Masters</option>
+  <option value="Degree">Degree</option>
+  <option value="BBA">BBA</option>
+  <option value="MBA">MBA</option>
+  <select><br><br>
+  <div class="radio-buttons">
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="male" id="male" required/>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female" required/>
+<label for="female">Female</label><br><br>
+<label>How did you got to know about our website?</label><br>
+<input type="checkbox" name="category" value="youtube" id="youtube">
+<label>YouTube</label><br>
+<input type='checkbox' name='category' value="instagram" id='instagram'>
+<label> Instagram</label><br>
+<input type='checkbox' name='category' value='throughfriends' id='throughfriends'>
+<label>Through friends</label><br><br>
+ <label for="address">Enter your Address:</label>
+<textarea id="address" name="address" placeholder="ADDRESS" required></textarea><br><br>
+<center><button id="submit" type="submit">Submit</button></center>
+
+</form>
+</body>
+</html>

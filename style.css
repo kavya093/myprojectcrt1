@@ -1,0 +1,27 @@
+h1{
+       color:blue; 
+       font-size: 80px;
+       background-color: aqua;
+}
+div{
+       background-color: teal;
+       /* height:100px;
+       width:100px; */
+       border-color: brown;
+       /* border:2px; */
+       font-size: 100px;
+}
+p{
+color:aqua;
+background-color: burlywood;
+font-size: 80px;
+}
+button{
+       font-size: 90px;
+       border-top-style: dashed;
+       border-radius: 100px;
+       border-width: 5px;
+       border-bottom-style:dashed ;
+       border-left-style: dashed;
+       border-right-style:dashed;
+}
