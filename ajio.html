@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajio Header</title>
+    <link rel="stylesheet" href="ajio.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Make the container a flex container */
+        .container {
+            display: flex; /* Key property: arranges children in a row */
+            align-items: center; /* Vertically centers items */
+            /* gap: 20px; */ /* Modern way to add space between items. You can use this instead of margin-right on spans if you prefer. */
+            padding: 10px 20px; /* Padding inside the container */
+            background-color: #ffffff; /* Example background */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+
+        /* Adjustments for the logo */
+        .container img {
+            margin-right: 30px; /* Add space to the right of the logo */
+            flex-shrink: 0; /* Prevents the image from shrinking if space is tight */
+        }
+
+        /* Style for the span elements */
+        .container span {
+            margin-right: 20px; /* Existing margin for spacing between spans */
+            white-space: nowrap; /* Prevents text inside spans from wrapping */
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Remove margin from the last span if you're using margin-right */
+        .container span:last-of-type {
+            margin-right: 0; /* Remove margin from the very last span element */
+        }
+
+        /* Style for the search container */
+        .search-container {
+            margin-left: auto; /* Pushes the search container to the far right */
+            display: flex; /* Make the search form itself a flex container */
+            align-items: center; /* Vertically align input and button */
+            gap: 5px; /* Space between input and button */
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 250px; /* Adjust width as needed */
+        }
+
+        .search-container button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="ajiologo.png" alt="Ajio Logo" width="200px" height="60px">
+        <div class="menu-item">
+            <div class="menuitem">MEN</div>
+            <div class="info-box">
+                <div class="dropdown-header">
+                    <span class="shopbylabel">Shop By:&nbsp;&nbsp;</span>
+                    <div class="tabactive">CATEGORIES&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="tab">BRANDS</div>
+                </div>
+                <div class="column">
+                    <h3>CLOTHING</h3>
+                    <h3>FOOTWEAR</h3>
+                    <h3>ACCESSORIES</h3>
+                    <h3>ALL THATS NEW</h3>
+                    <a href="https://www.ajio.com/s/clothing-4461-74581">Clothing</a>
+                    <a href="https://www.ajio.com/s/footwear-4792-56591">Footwear</a>
+                    <a href="https://www.ajio.com/s/accessories-4792-56591">Accessories</a>
+                    <h3>AJIO GLOBAL</h3>
+                    <h3>PLUS SIZE</h3>
+                    <h3>NIGHT & LOUNGEWEAR</h3>
+                    <h3>GROOMING<span class='label-new'>New</span></h3>
+                    <h3>ETHNIC & FESTIVE <span class="label-hot">HOT</span></h3>
+                    <a href="https://www.ajio.com/s/men-kurtas-and-shirts-4390-76941">Kurtas and Shirts</a>
+                    <a href="https://www.ajio.com/s/nehru-jackets-5170-351">Nehru Jackets</a>
+                </div>
+    <div class="column">
+      <h3>WESTERN WEAR</h3>
+      <a href="https://www.ajio.com/men-jackets-coats/c/830216010">Jackets & Coats</a>
+      <a href="https://www.ajio.com/men-jeans/c/830216001">Jeans</a>
+      <a href="https://www.ajio.com/men-shirts/c/830216013">Shirts</a>
+      <a href="https://www.ajio.com/men-shorts-3-4ths/c/830216002">Shorts & 3/4ths</a>
+      <a href="https://www.ajio.com/men-sweatshirt-hoodies/c/830216011">Sweatshirts & Hoodies</a>
+      <a href="https://www.ajio.com/men-track-pants/c/830216003">Track Pants</a>
+      <a href="https://www.ajio.com/men-trousers-pants/c/830216004">Trousers & Pants</a>
+      <a href="https://www.ajio.com/men-tshirts/c/830216014">T-Shirts</a><br>
+    </div>
+    <div class="column">
+      <h3>FOOTWEAR</h3>
+      <a href="https://www.ajio.com/men-casual-shoes/c/830207006">Casual Shoes</a>
+      <a href="https://www.ajio.com/men-flip-flop-slippers/c/830207001">Flip-Flops & Slippers</a>
+      <a href="https://www.ajio.com/men-formal-shoes/c/830207007">Formal Shoes</a>
+      <a href="https://www.ajio.com/s/sandals-5149-55061">Sandals</a>
+      <a href="https://www.ajio.com/men-sneakers/c/830207010">Sneakers</a>
+      <a href="https://www.ajio.com/men-sports-shoes/c/830207008">Sports Shoes</a><br>
+    </div>
+
+<a href="">Tshirts</a>
+<a href="">Trousers</a>
+<a href="">Formal shirts</a>
+<a href="">Watches</a>
+<a href="">Wallets</a>
+</div>
+</div>
+                <div class="menu-item">
+            <div class="menuitem">WOMEN</div>
+            <div class="info-box">
+                <a href="">Tshirts</a>
+                <a href="">Lehengas</a>
+                <a href="">Formal dresses</a>
+                <a href="">Watches</a>
+                <a href="">Footwear</a>
+
+            </div>
+        </div>
+                <div class="menu-item">
+            <div class="menuitem">KIDS</div>
+            <div class="info-box">
+                <a href="">Tshirts</a>
+                <a href="">pants</a>
+                <a href="">Body oils</a>
+                <a href="">Powders</a>
+                <a href="">Dresses</a>
+
+            </div>
+        </div>
+                <div class="menu-item">
+            <div class="menuitem">BEAUTY</div>
+            <div class="info-box">
+                <a href="">Lipsticks</a>
+                <a href="">Foot wear</a>
+                <a href="">Foundations</a>
+                <a href="">Mascara</a>
+                <a href="">Hair stylers</a>
+            </div>
+        </div>
+                <div class="menu-item">
+            <div class="menuitem">HOME & KITCHEN</div>
+            <div class="info-box">
+                <a href="">Dining <table></table></a>
+                <a href="">Electrical Appliances</a>
+                <a href="">Decor items</a>
+                <a href="">Utensils</a>
+                <a href="">cleaners</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" id="search-input" name="q" placeholder="Search for products, brands and more">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <marquee scrollamount="20" direction="right" bgcolor="white">
+       <img src="ajio1.jpg" height="500px" width="800px" >
+       <img src="ajio2.jpg" height="500px" width="800px" >
+       <img src="ajio3.jpg" height="500px" width="800px" >
+    </marquee>
+<h1 class="heading1">WOMEN'S WEAR</h1>
+<div class="container1">
+    <div class="box" id="box1">
+        <a href="..."><img src="womantop1.jpeg" alt='Top1' width="250px" height="250px"></a>
+        <div class="overlay">More</div>
+        <div class="product-info">
+            <h3>Stylum Women Printed Tiered Dress</h3>
+            <p>Color: Violet</p>
+            <p>Price: ₹1,299</p>
+        </div>
+        <div class="add-to-cart-btn-wrapper">
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="box" id="box2">
+        <a href="https://www.ajio.com/cottinfab-floral-print-fit-flare-dress/p/464634840006?srsltid=AfmBOooMIAqFhSQJORjXhKHAVqAV-MMFCbFpx_CdbuXJfYkfBD2VRlyB">
+            <img src="womantop2.jpeg" alt='Top2' width="250px" height="250px">
+        </a>
+        <div class="overlay">More</div>
+        <div class="product-info">
+            <h3>Cottinfab Floral Print Fit & Flare Dress</h3>
+            <p>Color: Multi</p>
+            <p>Price: ₹999</p>
+        </div>
+    </div>
+    <div class="box" id="box3">
+        <a href="https://www.ajio.com/miss-chase-floral-print-fit-flare-dress/p/466512202_wine?srsltid=AfmBOorf0PiGKTNqmcIFE7LM4YS8FgN6IJ05-3Hmf_kvzfpsGdZqy5if">
+            <img src="womantop3.jpeg" alt='Top3' width="250px" height="250px">
+        </a>
+        <div class="overlay">More</div>
+        <div class="product-info">
+            <h3>Miss Chase Floral Print Fit & Flare Dress</h3>
+            <p>Color: Wine</p>
+            <p>Price: ₹1,499</p>
+        </div>
+    </div>
+    <div class="box" id="box4">
+        <a href="https://www.ajio.com/raassio-women-floral-print-gown-dress/p/466986684004?srsltid=AfmBOooC1whiMxd_gdg4hbodRWKZD2d8DDhzMFFkukpJLCX_PzP_ED8-">
+            <img src="womantop4.jpeg" alt='Top4' width="250px" height="250px">
+        </a>
+        <div class="overlay">More</div>
+        <div class="product-info">
+            <h3>Raassio Women Floral Print Gown Dress</h3>
+            <p>Color: Blue</p>
+            <p>Price: ₹1,899</p>
+        </div>
+    </div>
+    <div class="box" id="box5">
+        <a href="https://www.ajio.com/fashion-2-wear-floral-print-fit-flare-dress/p/466336981003?srsltid=AfmBOoomhBX3n6uV30Pl4A-CTPps30IfbdutN-tDCXaYgC8YLmI3oEWI">
+            <img src="womantop5.jpeg" alt='Top5' width="250px" height="250px">
+        </a>
+        <div class="overlay">More</div>
+        <div class="product-info">
+            <h3>Fashion 2 Wear Floral Print Fit & Flare Dress</h3>
+            <p>Color: Peach</p>
+            <p>Price: ₹1,199</p>
+        </div>
+    </div>
+</div>
+       <h1 class="heading2">MEN'S WEAR</h1>
+    <div class="container2">
+        
+        <div class="box" id="box6">
+            <img src="ajioman1.jpeg"  alt='shirt1' width="250px" height="250px">
+        </div>
+        <div class="box" id="box7">
+            <img src="ajioman2.jpeg" alt='shirt2' width="250px" height="250px">
+        </div>
+        <div class="box" id="box8">
+            <img src="ajioman3.jpeg" alt='shirt3' width="250px" height="250px">
+        </div>
+        <div class="box" id="box9">
+            <img src="ajioman4.jpeg" alt='shirt4' width="250px" height="250px">
+        </div>
+                <div class="box" id="box10">
+            <img src="ajioman5.jpeg" alt='shirt5' width="250px" height="250px">
+        </div>
+    </div>
+<div class="slider">
+  <img class="slide" src="ajiosale1.jpeg" alt="Image 1">
+  <img class="slide" src="ajiosale2.jpeg" alt="Image 2">
+  <img class="slide" src="ajiosale3.jpeg" alt="Image 3">
+  <img class="slide" src="ajiosale4.jpeg" alt="Image 4">
+  <img class="slide" src="ajiosale5.jpeg" alt="Image 5">
+
+
+</div>
+<script src="ajio.js"></script>
+
+</body>
+</html>
