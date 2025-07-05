@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .cart-container {
+      background-color: white;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      gap: 20px;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .cart-details {
+      flex: 1;
+    }
+
+    .cart-details span {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #71d689;
+      color: black;
+      border: none;
+      padding: 8px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Shopping Cart</h1>
+  <div class="cart-container" id="cart-items">
+    <!-- Cart items will be inserted here -->
+  </div>
+  <footer>
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="clearCart()">Clear Cart</button>
+  </footer>
+
+  <script>
+    const cartContainer = document.getElementById('cart-items');
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let total = 0;
+
+    if (cart.length === 0) {
+      cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    } else {
+      cart.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "cart-item";
+
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.name;
+
+        const detailsDiv = document.createElement("div");
+        detailsDiv.className = "cart-details";
+
+        const nameSpan = document.createElement("span");
+        nameSpan.innerText = `Product: ${item.name}`;
+
+        const priceSpan = document.createElement("span");
+        priceSpan.innerText = `Price: ${item.price}`;
+
+        detailsDiv.appendChild(nameSpan);
+        detailsDiv.appendChild(priceSpan);
+
+        div.appendChild(img);
+        div.appendChild(detailsDiv);
+
+        cartContainer.appendChild(div);
+
+        const priceValue = parseInt(item.price.replace(/[₹,]/g, ""));
+        total += priceValue;
+      });
+
+      const totalDiv = document.createElement("div");
+      totalDiv.className = "total";
+      totalDiv.innerText = "Total: ₹" + total;
+      cartContainer.appendChild(totalDiv);
+    }
+
+    function checkout() {
+      window.location.href = "checkout.html";
+    }
+
+    function clearCart() {
+      localStorage.removeItem("cart");
+      location.reload();
+    }
+
+  </script>
+</body>
+</html>
