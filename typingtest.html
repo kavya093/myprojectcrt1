@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="typingtest.css">
+</head>
+
+<body>
+<div class="typing-container">
+<h1>Typing Speed Test</h1>
+<div class="sentence-display" id="sentenceDisplay"></div>
+<textarea class="typing-input" id="typingInput" placeholder="Start typing here..." rows="3"></textarea>
+<div class="stats">
+    <div class="stat-box">
+        <h3>Speed</h3>
+        <div class="stat-value" id="speed">0</div>
+        <span>WPM</span>
+    </div>
+    <div class="stat-box">
+        <h3>Errors</h3>
+        <div class="stat-value" id="errors">0</div>
+    </div>
+    <div class="stat-box">
+        <h3>Accuracy</h3>
+        <div class="stat-value" id="accuracy">100</div>
+        <span>%</span>
+    </div>
+</div>
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+</div>
+<div class="result-modal" id="resultModal">
+<div class="modal-content">
+<h2>Test Completed!</h2>
+<div class="result-stats">
+<div>
+    <span>Speed:</span>
+    <span id="resultSpeed">0 WPM</span>
+</div>
+<div>
+    <span>Errors:</span>
+    <span id="resultErrors">0</span>
+</div>
+<div>
+    <span>Accuracy:</span>
+    <span id="resultAccuracy">100%</span>
+</div>
+<div>
+    <span>Time:</span>
+    <span id="resultTime">0s</span>
+</div>
+</div>
+<button class="restart-btn" id="restartBtn">Try Again</button>
+</div>
+</div>
+<script src="typingtest.js"></script>
+</body>
+</html>
